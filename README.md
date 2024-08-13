@@ -152,6 +152,6 @@ If you would like to contribute to this project, please fork the repository and 
 
 - (TBD, scope creep issue ??? ) maybe more collaborative team related features can be added, however at the moment this script is meant to streamline git repo initialization  
 
-## License
+## License and use of project code
 
-This project is licensed under the MIT License.
+This code must only be used and distributed with the persmission of the Author of this Repository. To contact the author email at: shah634@purdue.edu 
