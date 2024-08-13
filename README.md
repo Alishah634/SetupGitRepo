@@ -144,10 +144,14 @@ python setup_git_repo.py
 
 If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
+## Bugs and Issues
+
+- Searching for local project folder only works if the user puts the local project folder name NOT the folder path. The script should be updated to accept both.
+
+- For existing git repos the user can only "commit" and "push" changes to repos, more features like git reset, delete ammend commits etc. should be added
+
+- (TBD, scope creep issue ??? ) maybe more collaborative team related features can be added, however at the moment this script is meant to streamline git repo initialization  
+
 ## License
 
 This project is licensed under the MIT License.
-
-## Bugs and Issues:
-
-At the moment searching for local project folder only works if the user puts the local project folder name NOT the folder path. The script should be updated to accept both.
