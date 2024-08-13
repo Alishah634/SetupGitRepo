@@ -5,7 +5,8 @@
 This project automates the process of initializing a local Git repository, setting up a remote repository on GitHub, and pushing the initial commit.
 
 Additional features:
-- Create git repositories of old projects that have not been added to github yet via a directory search of folders the user can specify in the the .env file (Explained below in Setup) 
+
+- Create git repositories of old projects that have not been added to github yet via a directory search of folders the user can specify in the the .env file (Explained below in Setup)
 - Allows the user to also make commits and edits to existing local git repos.
 - It is designed to work seamlessly on both Windows Subsystem for Linux (WSL) and standard Linux environments.
 
@@ -31,6 +32,7 @@ Before using this script, ensure you have the following installed:
 
 ```bash {"id":"01J554C48QHGR2MSPNECEK83NE"}
 pip install termcolor
+
 ```
 
 5. **dotenv (Python package):**
@@ -39,6 +41,7 @@ pip install termcolor
 
 ```bash {"id":"01J554C48REGK8X2YC9BGDCH5A"}
 pip install python-dotenv
+
 ```
 
 6. **SSH Key:**
@@ -53,6 +56,7 @@ pip install python-dotenv
 
 ```bash {"id":"01J554C48REGK8X2YC9C33FKDJ"}
 git clone git@github.com:YourUsername/YourRepository.git
+
 
 ```
 
@@ -74,6 +78,7 @@ WIN_PATH1=C:\\Users\\yourusername\\Desktop
 WIN_PATH2=C:\\Users\\yourusername\\Documents
 WIN_PATH3=C:\\Users\\yourusername\\Projects
 
+
 ```
 
 __Example of GITHUB_TOKEN:__
@@ -87,6 +92,7 @@ __Example of GITHUB_TOKEN:__
 ```bash {"id":"01J554C48REGK8X2YC9JXH31WA"}
 git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
+
 
 ```
 
@@ -112,6 +118,7 @@ Make sure to set these environment variables in the `.env` file. The script will
 
 ```bash {"id":"01J554C48REGK8X2YC9KQ4PFD4"}
 python setup_git_repo.py
+
 ```
 
 2. **Follow Prompts:**
@@ -142,18 +149,15 @@ python setup_git_repo.py
 
 ## Contributing
 
-If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Fun fact this project was made using this script!
 
 ## Bugs and Issues
 
 - Searching for local project folder only works if the user puts the local project folder name NOT the folder path. The script should be updated to accept both.
-
 - If the repo already exists, if the user types in the wrong name, the script attempts to make a new repo under that name, this does fail however, it can create issues.
-  
 - For existing git repos the user can only "commit" and "push" changes to repos, more features like git reset, delete ammend commits etc. should be added
-
-- (TBD, scope creep issue ??? ) maybe more collaborative team related features can be added, however at the moment this script is meant to streamline git repo initialization  
+- (TBD, scope creep issue ??? ) maybe more collaborative team related features can be added, however at the moment this script is meant to streamline git repo initialization
 
 ## License and use of project code
 
-This code must only be used and distributed with the persmission of the Author of this Repository. To contact the author email at: shah634@purdue.edu 
+This code must only be used and distributed with the persmission of the Author of this Repository. To contact the author email at: shah634@purdue.edu
