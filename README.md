@@ -116,9 +116,9 @@ python setup_git_repo.py
 
 2. **Follow Prompts:**
 
-   - Enter the directory name to search for.
+   - Enter the directory name to search for (The DIRECTORY NAME not the folder path!!!).
    - Enter your GitHub email if prompted to generate an SSH key.
-   - Enter the GitHub repository name.
+   - Enter the GitHub repository name (If the repo already exists, then type the repo name, if you type in the wrong thing then you need to exit this program and try again, This will be more robust in the future).
    - Enter a commit message (default: "Initial commit").
    - Enter the branch name to push to (default: master or main).
 
@@ -148,6 +148,8 @@ If you would like to contribute to this project, please fork the repository and 
 
 - Searching for local project folder only works if the user puts the local project folder name NOT the folder path. The script should be updated to accept both.
 
+- If the repo already exists, if the user types in the wrong name, the script attempts to make a new repo under that name, this does fail however, it can create issues.
+  
 - For existing git repos the user can only "commit" and "push" changes to repos, more features like git reset, delete ammend commits etc. should be added
 
 - (TBD, scope creep issue ??? ) maybe more collaborative team related features can be added, however at the moment this script is meant to streamline git repo initialization  
