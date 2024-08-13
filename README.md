@@ -149,7 +149,7 @@ python setup_git_repo.py
 
 ## Contributing
 
-If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Fun fact this project was made using this script!
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Fun fact this project was made and updated using this script!
 
 ## Bugs and Issues
 
